@@ -13,19 +13,22 @@ The server depends MongoDB which can be downloaded from https://www.mongodb.com/
 The REST server depends on a "default" configuration for mongo.  For linux, the default configuration
 file is located at /etc/mongod.conf.  On my system, it was nessicary to run the mongo server with root
 privilages - like this:
-'''
+
+``` shell
 sudo mongod --config /etc/mongod.conf
-'''
+```
+
 After that, mongo will be available on its default port: 27017
 
 ## Materials REST server
 
 To install and run the REST server:
-'''
+
+``` shell
 cd materials-api
 npm install
 npm start
-'''
+```
 
 The server will then be available at http://localhost:3000/
 
@@ -45,11 +48,12 @@ All responses are in JSON
 ## Material Manager web application
 
 To install and run the web application server
-'''
+
+``` shell
 cd cesium-materials
 npm install
 npm run start
-'''
+```
 
 The Material Manager will be available at http://localhost:8080/
 
